@@ -7,14 +7,12 @@ def main():
         # get rid of header
         _ = f.readline()
 
-        # Vote buckets
         sea = 0
         sharp = 0
         train = 0
         soccer = 0
         meat = 0
 
-        for line in f:
             print(line)
             # get vote
             info = line.split(",")
@@ -26,7 +24,6 @@ def main():
             elif fave_healthy == "meat con":
                 chopped += 1
 
-        # Results
         print("----------------------")
         print("Results: ")
         print(f"Sea Place: {sea}")
